@@ -1,10 +1,18 @@
 import React from 'react'
-import Hero from '../features/Hero'
+import {Link}  from 'react-router-dom';
+import BannerImage from '../assets/homepage1.jpeg';
+import './HomePageStyles.css';
 
 const HomePage = () => {
   return (
-    <div>
-    
+    <div className='home'>
+      <div className='headerContainer' style={{ backgroundImage: `url(${BannerImage})` }}>
+        <h1>Derek's Cafe</h1>
+        <p>Tacoma's Best Coffee</p>
+        <Link to='/menu'>
+        <button> Menu</button>
+        </Link>
+      </div>
     </div>
   )
 }

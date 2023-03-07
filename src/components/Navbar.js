@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {Button, Nav,NavLink} from 'reactstrap';
+import {Button, NavLink} from 'reactstrap';
 import './NavbarStyles.css';
 import {Link} from 'react-router-dom';
 import {FaBars, FaTimes} from 'react-icons/fa';
@@ -20,7 +20,7 @@ const Navbar = () => {
         <div className='container'>
             <div className='nav-bar'>
                 <Link to='/'>
-                <img src={logo} alt='cafe-logo' width={90} />
+                <img src={logo} alt='cafe-logo' width={80} />
                 </Link>
 
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
